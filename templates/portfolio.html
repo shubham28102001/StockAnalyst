@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% block title %} <h2> Portfolio </h2> {% endblock %}
+
+{% block body %}
+   <table class="table">
+      <tr class="table__header">
+      {% for header in headings %}
+         <th class="table__cell"> {{ header}} </th>
+      {% endfor %}
+      </tr>
+
+      {% for row in portfolio %}
+      <tr class="table__row">
+         {% for cell in row %}
+         <td class="table__cell"> {{ "%-8s" | format(cell) }} </td>
+         {% endfor %}
+      </tr>
+      {% endfor %}
+   </table>
+{% endblock %}

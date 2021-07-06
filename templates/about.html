@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %} <h2> About Us </h2> {% endblock %}
+
+{% block body %}
+
+<img src='static/img/stockanalyst.png' width="100%">
+<br><br>
+<p>
+
+    While talking to our peers and acquaintances, one issue we’ve always seen is that people want to invest and
+    diversify their portfolio, but do not know where to start. Understanding the stock market and its ups and down is
+    not very easy. This app aims to help beginners in understanding the market and also suggests the stocks in which they
+    can invest in. This app can assist people from all backgrounds in investing wisely.
+</p>
+<h4>BRIEF DESCRIPTION </h4>
+<p>
+    With the help of ML models, the future price of stocks is predicted in regular time intervals, and on that basis, this app suggests a portfolio of stocks to invest in, given the user's requirements. Stock data is loaded using libraries such as investpy, and the models run on it. On that basis, this app suggests the best stocks to invest in. The information that the app uses is mainly based on historical data of the stock, and the volume of it. The user interface is made using Flask, and it emphasizes user-friendliness.
+</p>
+
+{% endblock %}

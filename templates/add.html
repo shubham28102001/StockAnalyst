@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block title %} <h2> Add Stock to Portfolio </h2> {% endblock %}
+
+{% block body %}
+
+      <form action = "/portfolio" method = "POST">
+         <p>Enter the name of the company <input type ="text" name = "stockname" /></p>
+         <p>Enter the quantity bought <input type ="number" name = "quantity" /></p>
+         <p>Enter the buying price <input type ="number" name = "buy_price" /></p>
+         <p><input type = "submit" value = "Submit" /></p>
+
+      </form>      
+
+{% endblock %}

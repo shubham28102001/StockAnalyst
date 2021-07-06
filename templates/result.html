@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block title %} <h2> Results </h2> {% endblock %}
+
+{% block body %}
+      
+   </div>
+   <h3> {{ stock }} </h3>
+
+   <table class="table">
+      <tr class="table__header">
+      {% for header in headings %}
+         <th class="table__cell"> {{ header}} </th>
+      {% endfor %}
+      </tr>
+
+      {% for row in data %}
+      <tr class="table__row">
+         {% for cell in row %}
+         <td class="table__cell"> {{ "%-6s" | format(cell) }} </td>
+         {% endfor %}
+      </tr>
+      {% endfor %}
+   </table>
+{% endblock %}
